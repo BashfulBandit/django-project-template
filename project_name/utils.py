@@ -1,12 +1,12 @@
 def str2bool(str):
-	if isinstance(str, bool):
+    if isinstance(str, bool):
         return str
-	else:
-		if str.lower() == 'true':
+    else:
+        if str.lower() == 'true':
             return True
-		elif str.lower() == 'false':
+        elif str.lower() == 'false':
             return False
-		else:
+        else:
             raise ValueError(
                 "Cannot covert {} to a bool".format(str)
             )
