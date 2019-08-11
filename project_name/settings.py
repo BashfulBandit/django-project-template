@@ -27,9 +27,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', '{{ secret_key }}')
 DEBUG = str2bool(os.getenv('DEBUG', 'True'))
 
 ALLOWED_HOSTS = [
-    os.getenv('HOST', '')
+	os.getenv('HOST', '*')
 ]
-
 
 # Application definition
 
